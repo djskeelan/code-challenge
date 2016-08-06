@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chegg Tutors Engineering</title>
+    <link rel="icon" type="image/x-icon" href="http://chegg-tutors.appspot.com/public/img/chegg-favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./validation.js"></script>
+</head>
+<body>
+<div id="chg-balloon-logo-container">
+    <img src="http://chegg-tutors.appspot.com/public/img/logo.png" />
+</div>
+<div id="chg-balloon-controls-container">
+    <p>Enter a username to get started!</p>
+    <input id="chg-balloon-input" maxlength="2048" placeholder="e.g. BalloonMaster99"
+           name="username" autocomplete="off" type="text" value="" />
+    <button id="chg-balloon-submit">Check availability</button>
+</div>
+
+<div id="chg-balloon-feedback-container"></div>
+
+<script type="text/javascript">
+
+    // Fix error in jquery selector missing # to find element based on id
+    $("#chg-balloon-submit").click(function() {
+        cheggv.checkAvailability(this);
+    });
+
+</script>
+
+</body>
+</html>

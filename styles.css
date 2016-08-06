@@ -1,0 +1,108 @@
+body {
+    font-family: 'arial';
+    color: #777;
+}
+
+#chg-balloon-logo-container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+#chg-balloon-logo-container > img {
+    width: 100%;
+    margin-left: -25px;
+}
+
+#chg-balloon-controls-container {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#chg-balloon-controls-container > input {
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #CCC;
+    padding: 10px;
+    font-size: 14px;
+    width: 260px;
+}
+
+#chg-balloon-controls-container > p {
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    padding-left: 4px;
+    font-size: 18px;
+    max-width: 280px;
+}
+
+#chg-balloon-controls-container > button {
+    border: 1px solid #CCC;
+    padding: 10px 18px;
+    border-radius: 4px;
+    background: none;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #777;
+}
+
+#chg-balloon-controls-container > button:hover {
+    background: #EFEFEF;
+}
+
+#chg-balloon-controls-container > button:focus {
+    outline: none;
+}
+
+#chg-balloon-controls-container > button:active {
+    background: #DDD;
+}
+
+#chg-balloon-feedback-container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#chg-balloon-feedback-container > p {
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+
+#chg-balloon-feedback-container > p > span.material-icons {
+    padding-right: 20px;
+}
+
+#chg-balloon-feedback-container > div {
+    text-align: left;
+    margin: 0;
+    margin-top: 30px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+
+#chg-balloon-feedback-container > div > div {
+    margin-left: 44px;
+    margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+    #chg-balloon-controls-container > button {
+        width: 280px;
+        margin-left: 0px;
+    }
+
+    #chg-balloon-controls-container > p {
+        margin: auto;
+        margin-top: 40px;
+    }
+}
